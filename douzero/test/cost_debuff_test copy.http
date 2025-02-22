@@ -1,0 +1,100 @@
+POST http://localhost:8000
+Content-Type: application/json
+
+{
+    "position": "second_hand",
+    "retry": 0,
+    "hero_play": false,
+    "crystal": 6,
+    "round": 12,
+    "player_hand_cards": [
+        {
+            "cardId": "VAC_419",
+            "attack": 1,
+            "hp": 2,
+            "entityId": "57",
+            "isActive": false,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false, 
+                "isActive": false
+            },
+            "cost": 1
+        },
+        {
+            "cardId": "NX2_019",
+            "attack": 1,
+            "hp": 2,
+            "entityId": "57",
+            "isActive": false,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false, 
+                "isActive": false
+            },
+            "cost": 1
+        },
+        {
+            "cardId": "VAC_419",
+            "attack": 0,
+            "hp": 3,
+            "entityId": "52",
+            "isActive": false,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false, 
+                "isActive": false
+            },
+            "cost": 1
+        }
+    ],
+    "player_deck_cards": [],
+    "played_actions": [
+    ],
+    "rival_battle_cards": [
+        {
+            "cardId": "FP1_030",
+            "attack": 0,
+            "hp": 3,
+            "entityId": "52",
+            "isActive": false,
+            "playedRound": 12,
+            "card": {
+                "isImmune": false, 
+                "isActive": false
+            },
+            "cost": 1
+        }
+    ],
+    "companion_battle_cards": [
+    ],
+    "companion_died": [],
+    "companion_burst_cards": [],
+    "rivalHeroDetails": {
+        "cardId": "HERO_04a",
+        "attack": 0,
+        "hp": 30,
+        "entityId": "64",
+        "isActive": false,
+        "playedRound": -1,
+        "card": {
+            "isImmune": false, 
+            "isActive": false
+        }
+    },
+    "meHeroDetails": {
+        "cardId": "HERO_09",
+        "attack": 0,
+        "hp": 2,
+        "entityId": "66",
+        "isActive": false,
+        "playedRound": -1,
+        "card": {
+            "isImmune": false, 
+            "isActive": false
+        }
+    },
+    "attack_rival_hero": 0,
+    "attack_me_hero": 0,
+    "secret_size": 0
+}

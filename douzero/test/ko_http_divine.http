@@ -1,0 +1,125 @@
+POST http://localhost:8000
+Content-Type: application/json
+
+{"position": "second_hand", "retry": 0, "hero_play": true, "crystal": 6, "round": 12,
+"rivalHeroDetails": {
+    "description": "20",
+    "cardId": "HERO_09", 
+    "attack": 0, 
+    "hp": 30,
+    "entityId": "200",
+    "isActive": true,
+    "playedRound": -1,
+    "card": {
+        "isImmune": false
+    }
+},
+"player_hand_cards": [
+        {
+            "cardId": "REV_290",
+            "attack": 0,
+            "hp": 3,
+            "entityId": "10",
+            "isActive": true,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false
+            }
+        },
+        {
+            "cardId": "NX2_019", 
+            "attack": 0, 
+            "hp": 1, 
+            "entityId": "11", 
+            "isActive": true,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false, 
+                "isActive": false
+            }
+        },
+        {
+            "cardId": "GVG_009",
+            "attack": 3,
+            "hp": 3,
+            "entityId": "12",
+            "isActive": false,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false
+            }
+        }
+], 
+"player_deck_cards": [], 
+"played_actions": [], 
+"rival_battle_cards": [
+        {
+            "description": "# 2: 23, 3: 4",
+            "cardId": "GDB_320", 
+            "attack": 3, 
+            "hp": 2, 
+            "entityId": "20", 
+            "isActive": false,
+            "playedRound": -1,
+            "card": {
+                "isLifesteal": false,
+                "isImmune": false,
+                "isTaunt": true,
+                "isDivineShield": true
+            }
+        }
+    ],
+"companion_battle_cards": [
+        {
+            "cardId": "GVG_009",
+            "attack": 3,
+            "hp": 3,
+            "entityId": "30",
+            "isActive": true,
+            "playedRound": -1,
+            "description": "CFM_652: 28, GDB_320: 24",
+            "card": {
+                "isImmune": false
+            }
+        },
+        {
+            "cardId": "SW_446", 
+            "attack": 1, 
+            "hp": 3, 
+            "entityId": "31", 
+            "isActive": true,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false
+            }
+        },
+        {
+            "cardId": "SW_446", 
+            "attack": 3, 
+            "hp": 3, 
+            "entityId": "32", 
+            "isActive": true,
+            "playedRound": -1,
+            "card": {
+                "isImmune": false
+            }
+        }
+    ], 
+"companion_died": [], 
+"companion_burst_cards": [], 
+"attack_rival_hero": 0, 
+"attack_me_hero":0,
+"meHeroDetails":     {
+        "cardId": "GVG_009",
+        "attack": 3,
+        "hp": 1,
+        "isActive": false,
+        "playedRound": -1,
+        "entityId": "100",
+        "card": {
+            "isImmune": false, 
+            "isActive": false
+        }
+    },
+"secret_size": 0
+}

@@ -1,0 +1,113 @@
+POST http://localhost:8000
+Content-Type: application/json
+
+{"position": "second_hand", "retry": 0, "hero_play": false, "crystal": 6, 
+"round": 12,
+"rival_battle_cards": [
+        {
+            "description": "# -471.59999999999997",
+            "cardId": "GDB_320",
+            "attack": 4, 
+            "hp": 5, 
+            "entityId": "0", 
+            "playedRound": -1, 
+            "isActive": false,
+            "card": {
+                "isTaunt": true,
+                "isLifesteal": true
+            }
+        },
+        {
+            "cardId": "SW_446", 
+            "attack": 1, 
+            "hp": 5, 
+            "entityId": "1", 
+            "playedRound": -1, 
+            "isActive": false,
+            "card": {
+            }
+        }
+    ],
+"rivalHeroDetails": {
+    "cardId": "HERO_09", 
+    "attack": 0, 
+    "hp": 29,
+    "entityId": "2", 
+    "playedRound": -1, 
+    "isActive": false,
+    "card": {
+        "isImmune": false
+    }
+},
+"player_hand_cards": [
+        {
+            "cardId": "NX2_019", 
+            "attack": 0, 
+            "hp": 0, 
+            "entityId": "3", 
+            "playedRound": -1, 
+            "isActive": false,
+            "card": {
+            }
+        },
+        {
+            "cardId": "NX2_019", 
+            "attack": 0, 
+            "hp": 0, 
+            "entityId": "4", 
+            "playedRound": -1, 
+            "isActive": false,
+            "card": {
+            }
+        }
+], 
+"player_deck_cards": [], 
+"played_actions": [[],[],[],[],[],[],[],[],[],[],[],[],[],[]], 
+"companion_battle_cards": [
+        {
+            "cardId": "REV_290",
+            "attack": 0, 
+            "hp": 3, 
+            "entityId": "5", 
+            "playedRound": -1, 
+            "isActive": true,
+            "card": {
+            }
+        },
+        {
+            "cardId": "SW_446", 
+            "attack": 1, 
+            "hp": 2, 
+            "entityId": "6", 
+            "playedRound": -1, 
+            "isActive": false,
+            "card": {
+            }
+        },
+        {
+            "cardId": "SW_444", 
+            "attack": 2, 
+            "hp": 3, 
+            "entityId": "7", 
+            "playedRound": -1, 
+            "isActive": true,
+            "card": {
+            }
+        }
+    ], 
+"companion_died": [], 
+"companion_burst_cards": [], 
+"attack_rival_hero": 0, 
+"attack_me_hero":0,
+"meHeroDetails":     {
+        "cardId": "GVG_009",
+        "attack": 3,
+        "hp": 1,
+        "playedRound": -1, 
+        "entityId": "8", 
+        "isActive": false,
+        "card": {
+        }
+    },
+"secret_size": 0
+}
