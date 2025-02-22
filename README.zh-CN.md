@@ -8,7 +8,7 @@ Zha, Daochen et al. “DouZero: Mastering DouDizhu with Self-Play Deep Reinforce
 
 首先，克隆本仓库：
 ```
-git clone https://github.com/kwai/DouZero.git
+git clone https://github.com/vincent-twentytwentythree/hearthstone-resnet.git
 ```
 
 确保您已经安装好Python 3.6及以上版本，然后安装依赖：
@@ -16,7 +16,6 @@ git clone https://github.com/kwai/DouZero.git
 cd douzero
 pip3 install -r requirements.txt
 ```
-注意，Windows用户只能用CPU来模拟。
 
 ## 训练
 假定您至少拥有一块可用的GPU，运行
@@ -86,10 +85,13 @@ python3 train.py --actor_device_cpu
 --epsilon EPSILON     RMSProp epsilon
 ```
 ## 启动http服务
+* 模型: https://drive.google.com/file/d/1w8Lte6Dbyg3S3r9dCTOYB13vNbmN2oSU/view?usp=sharing
 * 套牌: AAEBAa0GApG8Arv3Aw6hBOmwA7q2A9fOA6P3A633A4aDBd2kBcShBsSoBvyoBte6BtXBBtzzBgAA
 * 复制先手模型landlord_model.tar to douzero_checkpoints/douzero/landlord_model.tar
 * 复制后手模型second_hand_model.tar to douzero_checkpoints/douzero/second_hand_model.tar
-* python http_server.py --gpu_devices 0 --num_actor_devices 1 --num_actors 6 --training_device 0 --load_model --save_interval 10
+* 启动服务
+* * GPU: python http_server.py --gpu_devices 0 --training_device 0 --load_model
+* * CPU: python http_server.py --training_device cpu --load_model
 
 ## 接口
 ```json
